@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class AddVC: UIViewController {
 
@@ -17,6 +18,12 @@ class AddVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func handleTap() {
+        view.endEditing(true)
     }
     
     @IBAction func saveBtnPressed(_ sender: Any) {
@@ -25,7 +32,14 @@ class AddVC: UIViewController {
             return
         }
         
-        print("\(title), \(time)")
+        let work = Work()
+        work.workTitle = title
+        work.scheduleTime = time
+        
+        try! realm.write {
+            realm.add(work, update: true)
+        }
+        
         self.dismiss(animated: true, completion: nil)
     }
     

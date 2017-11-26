@@ -65,13 +65,13 @@
 		9E29224A1FCB1CE50037EEF3 /* RealmTODO */ = {
 			isa = PBXGroup;
 			children = (
-				9E2922621FCB27400037EEF3 /* Model */,
 				9E29224B1FCB1CE50037EEF3 /* AppDelegate.swift */,
 				9E29224F1FCB1CE50037EEF3 /* Main.storyboard */,
 				9E2922521FCB1CE50037EEF3 /* Assets.xcassets */,
 				9E2922541FCB1CE50037EEF3 /* LaunchScreen.storyboard */,
 				9E2922571FCB1CE50037EEF3 /* Info.plist */,
 				9E2922611FCB1F1F0037EEF3 /* Controllers */,
+				9E2922621FCB27400037EEF3 /* Model */,
 			);
 			path = RealmTODO;
 			sourceTree = "<group>";

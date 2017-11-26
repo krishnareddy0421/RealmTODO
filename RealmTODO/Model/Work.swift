@@ -7,5 +7,13 @@
 //
 
 import Foundation
+import RealmSwift
 
-
+class Work: Object {
+    @objc dynamic var workTitle: String? = nil
+    @objc dynamic var scheduleTime: String? = nil
+    
+    override static func primaryKey() -> String? {
+        return "workTitle"
+    }
+}
