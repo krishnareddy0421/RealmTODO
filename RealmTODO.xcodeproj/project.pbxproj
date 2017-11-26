@@ -14,6 +14,7 @@
 		9E2922561FCB1CE50037EEF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2922541FCB1CE50037EEF3 /* LaunchScreen.storyboard */; };
 		9E29225E1FCB1F020037EEF3 /* TODOTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E29225D1FCB1F020037EEF3 /* TODOTableVC.swift */; };
 		9E2922601FCB1F130037EEF3 /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E29225F1FCB1F130037EEF3 /* AddVC.swift */; };
+		9E2922641FCB27590037EEF3 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2922631FCB27590037EEF3 /* Work.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9E2922571FCB1CE50037EEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E29225D1FCB1F020037EEF3 /* TODOTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOTableVC.swift; sourceTree = "<group>"; };
 		9E29225F1FCB1F130037EEF3 /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
+		9E2922631FCB27590037EEF3 /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
 		C9E67531D4D1A6867B7F86C1 /* Pods_RealmTODO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmTODO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAD850B67CAA9AA8E59A773 /* Pods-RealmTODO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTODO.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTODO/Pods-RealmTODO.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 		9E29224A1FCB1CE50037EEF3 /* RealmTODO */ = {
 			isa = PBXGroup;
 			children = (
+				9E2922621FCB27400037EEF3 /* Model */,
 				9E29224B1FCB1CE50037EEF3 /* AppDelegate.swift */,
 				9E29224F1FCB1CE50037EEF3 /* Main.storyboard */,
 				9E2922521FCB1CE50037EEF3 /* Assets.xcassets */,
@@ -80,6 +83,14 @@
 				9E29225F1FCB1F130037EEF3 /* AddVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9E2922621FCB27400037EEF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E2922631FCB27590037EEF3 /* Work.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CA852941FAF9D6B9FF98B5B7 /* Frameworks */ = {
@@ -230,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E2922641FCB27590037EEF3 /* Work.swift in Sources */,
 				9E2922601FCB1F130037EEF3 /* AddVC.swift in Sources */,
 				9E29224C1FCB1CE50037EEF3 /* AppDelegate.swift in Sources */,
 				9E29225E1FCB1F020037EEF3 /* TODOTableVC.swift in Sources */,
